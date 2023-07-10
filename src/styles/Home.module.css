@@ -1,0 +1,116 @@
+/* テーブル */
+.table {
+  border-collapse: collapse;
+  border-spacing: 5px;
+  width: 100%;
+}
+.tableContainer {
+  overflow-y: auto;
+}
+.table th {
+  background-color: rgb(0, 207, 142);
+  color: white;
+  text-align: center;
+  width: 10%;
+  min-width: 50px;
+  padding: 5px;
+  height: 20px;
+  white-space: nowrap;
+  border: 1px solid #000066;
+}
+
+.table td {
+  text-align: left;
+  width: 10%;
+  min-width: 50px;
+  padding: 5px;
+  height: 20px;
+  white-space: nowrap;
+  border: 1px solid #000066;
+}
+
+@media only screen and (max-width: 768px) {
+  .table {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+}
+
+/* ボタン */
+.detailButton {
+  border: none;
+  border-radius: 5px;
+  background-color: skyblue;
+  margin: 5px;
+}
+.editButton {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(119, 255, 155);
+  margin: 5px;
+}
+.deleteButton {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(235, 135, 135);
+  margin: 5px;
+}
+.createButton {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 207, 142);
+  padding: 20px;
+}
+
+.detailButton:hover,
+.editButton:hover,
+.deleteButton:hover,
+.createButton:hover {
+  background-color: #666666;
+}
+
+/* create-post */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.submitCreate {
+  padding: 10px 20px;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(119, 255, 155);
+}
+
+.submitEdit {
+  padding: 10px 20px;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(119, 255, 155);
+}
